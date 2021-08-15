@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account Info</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="m-8">
+        <h1 class="text-center text-7xl bold">Your <span class="text-green-400">Account Details</span></h1>
+    </header>
+    <main>
+        <!-- account status section start here -->
+        <section class="w-11/12 mx-auto">
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-4">
+                <!-- diposit total-->
+                <div class="bg-blue-400 p-16 rounded shadow-md">
+                    <h3 class="text-5xl text-white bold">Deposit</h3>
+                    <h1 class="text-6xl text-white bold">$<span id="deposit-total">000</span></h1>
+                </div>
+                <!-- withdraw -->
+                <div class="bg-red-400 p-16 rounded shadow-md">
+                    <h3 class="text-5xl text-white bold">Withdraw</h3>
+                    <h1 class="text-6xl text-white bold">$<span id="withdraw-total">000</span></h1>
+                </div>
+                <!-- balance -->
+                <div class="bg-green-400 p-16 rounded shadow-md">
+                    <h3 class="text-5xl text-white bold">Balance</h3>
+                    <h1 class="text-6xl text-white bold">$<span id="balance-total">000</span></h1>
+                </div>
+            </div>
+        </section>
+        <!-- account transection and deposit section start here -->
+        <section class="mt-10 w-11/12 mx-auto">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                <!-- deposit  -->
+                <div class="bg-pink-300 p-6 rounded shadow-md">
+                    <h3 class="text-3xl text-white m-3">Please Deposit</h3>
+                    <!-- deposit input  -->
+                    <input id="deposit-holder" placeholder="Enter ammount to deposit"
+                        class="m-3 block border-gray-500 p-2 w-3/4 border border-transparent focus:outline-none rounded focus:ring-purple-600 focus:border-transparent"
+                        type="number" name="" id="">
+                    <!-- deposit button -->
+                    <button id="deposit-button"
+                        class="bg-green-500 hover:bg-green-600 block rounded m-3 py-2 px-6 text-2xl text-white shadow-md bold">Deposit
+                    </button>
+                </div>
+                <!-- withdraw -->
+                <div class="bg-purple-300 p-6 rounded shadow-md">
+                    <h3 class="text-3xl text-white m-3">Please Withdraw</h3>
+                    <!-- withdraw input  -->
+                    <input id="withdraw-holder" placeholder="Enter ammount to deposit"
+                        class="m-3 block border-gray-500 p-2 w-3/4 border border-transparent focus:outline-none rounded focus:ring-purple-600 focus:border-transparent"
+                        type="number">
+                    <!-- withdraw button  -->
+                    <button id="withdraw-button"
+                        class="bg-green-500 hover:bg-green-600 block rounded m-3 py-2 px-6 text-2xl text-white shadow-md bold">Withdraw
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/banking.js"></script>
+</body>
+
+</html>
